@@ -36,12 +36,12 @@ Serial communication
 PID control  
 
 ## Project Structure
-
 .
-├── main.py          # main tracking loop
-├── detector.py      # object detection using YOLO
-├── pid.py           # PID controller
-├── serial_comm.py   # communication with ESP32
+|-- main.py # main tracking loop
+|-- detector.py # object detection using YOLO
+|-- pid.py # PID controller
+|-- serial_comm.py # communication with ESP32
+
 
 ## Core Components
 
@@ -82,6 +82,10 @@ Received → pan=90° tilt=45°
 ## Limitations
 
 The system works best with a single visible person. It is sensitive to lighting conditions. It does not support multi-object tracking. PID parameters are tuned manually. A wired connection is required.
+
+## Development Note
+
+The project was developed with the help of Claude Code, which was used throughout the implementation process for coding assistance and debugging.
 
 ## Future Work
 
